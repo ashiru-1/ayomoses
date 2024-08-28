@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Moses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/build/js/main.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-slate-50 ">
+  <!-- header---start -->
+  <header class='flex border-b bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
+    <div class='flex flex-wrap items-center justify-between px-10 py-3 gap-4 w-full'>
+      <a href="index.html" class="text-3xl text-[#007bff] font-bold">AYO MOSES</a>
+  
+      <div id="collapseMenu"
+        class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+        <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+            <path
+              d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+              data-original="#000000"></path>
+            <path
+              d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+              data-original="#000000"></path>
+          </svg>
+        </button>
+  
+        <ul
+          class='lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+          <li class='mb-6 hidden max-lg:block'>
+            <a href="index.html" class="text-3xl text-[#007bff] font-bold">AYO MOSES</a>
+            </a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+              class='hover:text-blue-600 text-[15px] font-bold text-blue-600 block'>Home</a></li>
+          <li class='group max-lg:border-b max-lg:py-3 relative'>
+            <a href='work.html'
+              class='hover:text-[#007bff] text-gray-600 text-[15px] font-bold lg:hover:fill-[#007bff] block'>Work With Me<svg
+                xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                  data-name="16" data-original="#000000" />
+              </svg>
+            </a>
+            <ul
+              class='absolute shadow-lg bg-white space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+              <li class='border-b py-2 '><a href='javascript:void(0)'
+                  class='hover:text-[#007bff] text-gray-600 text-[15px] font-bold block'>Curriculum & Product Development</a></li>
+              <li class='border-b py-2 '><a href='javascript:void(0)'
+                  class='hover:text-[#007bff] text-gray-600 text-[15px] font-bold block'>Instructional Design</a></li>
+              <li class='border-b py-2 '><a href='javascript:void(0)'
+                  class='hover:text-[#007bff] text-gray-600 text-[15px] font-bold block'>Learning Experience Design</a></li>
+            </ul>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3'><a href='portfolio.html'
+              class='hover:text-[#007bff] text-gray-600 text-[15px] font-bold block'>Portfolio</a></li>
+          <!-- <li class='max-lg:border-b max-lg:py-3'><a href='Products.html'
+              class='hover:text-[#007bff] text-gray-600 text-[15px] font-bold block'>Products</a></li> -->
+              <li class='max-lg:border-b max-lg:py-3'><a href='about.html'
+                class='hover:text-[#007bff] text-gray-600 text-[15px] font-bold block'>About</a></li>
+          <li class='max-lg:border-b max-lg:py-3'><a href='contact.html'
+              class='hover:text-[#007bff] text-gray-600 text-[15px] font-bold block'>Contact</a></li>
+        </ul>
+      </div>
+      <button id="toggleOpen" class='lg:hidden'>
+        <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+         <!-- header-end -->
+
+         <!-- hero---start -->
+         <div class="px-4 sm:px-1">
+          <div class="min-h-[500px] px-10">
+            <div class="grid md:grid-cols-2 justify-center items-center gap-10">
+              <div class="max-md:order-1">
+                <h1 class="md:text-5xl text-4xl font-bold mb-4 md:!leading-[55px] mt-12">Hello!!!<br> I'm Ayo Moses</h1>
+                <p class="mt-4 text-base leading-relaxed">Step into the world of innovation and creativity that I've crafted. Explore the projects that blend technology, storytelling, and strategy, each designed to solve real-world challenges. Dive into the details and discover how my work can elevate your next big idea.</p>
+                  <p class="mt-4 mb-2 font-semibold text-blue-600 text-xl"><span class="rotate-90 inline-block mr-2">|</span> My Career Highlights</p>
+                <div class="mt-1 grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
+                  <img src="img/worklogos/kuda-bank-logo-313C789D38-seeklogo.com.png" class="w-28 mx-auto" alt="kuda-logo" />
+                  <img src="img/worklogos/brainiacs.png" class="w-28 mx-auto" alt="brainacs-logo" />
+                  <img src="img/worklogos/plural-removebg-preview.png" class="w-28 mx-auto" alt="pluralcode" />
+                  <img src="https://readymadeui.com/pinterest-logo.svg" class="w-28 mx-auto" alt="pinterest-logo" />
+                </div>
+              </div>
+              <div class="max-md:mt-12 h-full">
+                <img src="img/man.jpg" alt="banner img" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+          <!-- hero---end -->
+
+          <!-- Work with me-- start-->
+          <div class="bg-[#F7F7F7] font-[sans-serif]">
+            <div class="max-w-6xl mx-auto py-16 px-10">
+              <h2 class="text-gray-800 text-4xl font-extrabold text-center mb-16">Work With Me</h2>
+      
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:max-w-md mx-auto">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                  <div class="p-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#007bff" class="w-8 mb-6" viewBox="0 0 32 32">
+                      <path d="M28.068 12h-.128a.934.934 0 0 1-.864-.6.924.924 0 0 1 .2-1.01l.091-.091a2.938 2.938 0 0 0 0-4.147l-1.511-1.51a2.935 2.935 0 0 0-4.146 0l-.091.091A.956.956 0 0 1 20 4.061v-.129A2.935 2.935 0 0 0 17.068 1h-2.136A2.935 2.935 0 0 0 12 3.932v.129a.956.956 0 0 1-1.614.668l-.086-.091a2.935 2.935 0 0 0-4.146 0l-1.516 1.51a2.938 2.938 0 0 0 0 4.147l.091.091a.935.935 0 0 1 .185 1.035.924.924 0 0 1-.854.579h-.128A2.935 2.935 0 0 0 1 14.932v2.136A2.935 2.935 0 0 0 3.932 20h.128a.934.934 0 0 1 .864.6.924.924 0 0 1-.2 1.01l-.091.091a2.938 2.938 0 0 0 0 4.147l1.51 1.509a2.934 2.934 0 0 0 4.147 0l.091-.091a.936.936 0 0 1 1.035-.185.922.922 0 0 1 .579.853v.129A2.935 2.935 0 0 0 14.932 31h2.136A2.935 2.935 0 0 0 20 28.068v-.129a.956.956 0 0 1 1.614-.668l.091.091a2.935 2.935 0 0 0 4.146 0l1.511-1.509a2.938 2.938 0 0 0 0-4.147l-.091-.091a.935.935 0 0 1-.185-1.035.924.924 0 0 1 .854-.58h.128A2.935 2.935 0 0 0 31 17.068v-2.136A2.935 2.935 0 0 0 28.068 12ZM29 17.068a.933.933 0 0 1-.932.932h-.128a2.956 2.956 0 0 0-2.083 5.028l.09.091a.934.934 0 0 1 0 1.319l-1.511 1.509a.932.932 0 0 1-1.318 0l-.09-.091A2.957 2.957 0 0 0 18 27.939v.129a.933.933 0 0 1-.932.932h-2.136a.933.933 0 0 1-.932-.932v-.129a2.951 2.951 0 0 0-5.028-2.082l-.091.091a.934.934 0 0 1-1.318 0l-1.51-1.509a.934.934 0 0 1 0-1.319l.091-.091A2.956 2.956 0 0 0 4.06 18h-.128A.933.933 0 0 1 3 17.068v-2.136A.933.933 0 0 1 3.932 14h.128a2.956 2.956 0 0 0 2.083-5.028l-.09-.091a.933.933 0 0 1 0-1.318l1.51-1.511a.932.932 0 0 1 1.318 0l.09.091A2.957 2.957 0 0 0 14 4.061v-.129A.933.933 0 0 1 14.932 3h2.136a.933.933 0 0 1 .932.932v.129a2.956 2.956 0 0 0 5.028 2.082l.091-.091a.932.932 0 0 1 1.318 0l1.51 1.511a.933.933 0 0 1 0 1.318l-.091.091A2.956 2.956 0 0 0 27.94 14h.128a.933.933 0 0 1 .932.932Z" data-original="#000000" />
+                      <path d="M16 9a7 7 0 1 0 7 7 7.008 7.008 0 0 0-7-7Zm0 12a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Z" data-original="#000000" />
+                    </svg>
+                    <h3 class="text-gray-800 text-xl font-semibold mb-3">Curriculum &  Product Development</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, maiores. Eum molestias nobis amet nisi sapiente eveniet vitae, quo cum mollitia voluptatum placeat et rerum minus illo aliquam, ipsum maiores.</p>
+                  </div>
+                </div>
+      
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                  <div class="p-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#007bff" class="w-8 mb-6" viewBox="0 0 682.667 682.667">
+                      <defs>
+                        <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                          <path d="M0 512h512V0H0Z" data-original="#000000" />
+                        </clipPath>
+                      </defs>
+                      <g fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="40" clip-path="url(#a)" transform="matrix(1.33 0 0 -1.33 0 682.667)">
+                        <path d="M256 492 60 410.623v-98.925C60 183.674 137.469 68.38 256 20c118.53 48.38 196 163.674 196 291.698v98.925z" data-original="#000000" />
+                        <path d="M178 271.894 233.894 216 334 316.105" data-original="#000000" />
+                      </g>
+                    </svg>
+                    <h3 class="text-gray-800 text-xl font-semibold mb-3">Instructional Design</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus nesciunt molestias dolorem doloribus laborum consequatur sed obcaecati, earum voluptate autem ad praesentium nemo et, optio beatae architecto id repellendus!</p>
+                  </div>
+                </div>
+      
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                  <div class="p-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#007bff" class="w-8 mb-6" viewBox="0 0 24 24">
+                      <g fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M17.03 8.97a.75.75 0 0 1 0 1.06l-4.2 4.2a.75.75 0 0 1-1.154-.114l-1.093-1.639L8.03 15.03a.75.75 0 0 1-1.06-1.06l3.2-3.2a.75.75 0 0 1 1.154.114l1.093 1.639L15.97 8.97a.75.75 0 0 1 1.06 0z" data-original="#000000" />
+                        <path d="M13.75 9.5a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-1.25H14.5a.75.75 0 0 1-.75-.75z" data-original="#000000" />
+                        <path d="M3.095 3.095C4.429 1.76 6.426 1.25 9 1.25h6c2.574 0 4.57.51 5.905 1.845C22.24 4.429 22.75 6.426 22.75 9v6c0 2.574-.51 4.57-1.845 5.905C19.571 22.24 17.574 22.75 15 22.75H9c-2.574 0-4.57-.51-5.905-1.845C1.76 19.571 1.25 17.574 1.25 15V9c0-2.574.51-4.57 1.845-5.905zm1.06 1.06C3.24 5.071 2.75 6.574 2.75 9v6c0 2.426.49 3.93 1.405 4.845.916.915 2.419 1.405 4.845 1.405h6c2.426 0 3.93-.49 4.845-1.405.915-.916 1.405-2.419 1.405-4.845V9c0-2.426-.49-3.93-1.405-4.845C18.929 3.24 17.426 2.75 15 2.75H9c-2.426 0-3.93.49-4.845 1.405z" data-original="#000000" />
+                      </g>
+                    </svg>
+                    <h3 class="text-gray-800 text-xl font-semibold mb-3">Learning Experience Design</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi soluta libero ipsam quas sint quia cum velit dicta nulla optio ipsa molestiae, eius, incidunt aperiam? Reprehenderit soluta delectus omnis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- work with me---end -->
+
+
+          <!-- testimonial---start -->
+          <div class="mt-6 font-[sans-serif]">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-gray-800 text-3xl font-extrabold">What our happy client say</h2>
+                    <p class="text-sm text-gray-800 mt-6 leading-relaxed">Veniam proident aute magna anim excepteur et ex consectetur velit ullamco veniam minim aute sit. Elit occaecat officia et laboris Lorem minim. Officia do aliqua adipisicing ullamco in.</p>
+                </div>
+  
+                <div class="grid md:grid-cols-3 md:gap-6 max-md:gap-10 max-md:justify-center mt-16 px-10">
+                    <div class="max-w-[350px] h-auto shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] lg:p-8 p-4 rounded-md bg-white relative  cursor-pointer hover:scale-[1.05] transition-all">
+                        <div class="bg-blue-600 flex items-center justify-center w-16 h-16 max-lg:w-14 max-lg:h-14 rounded-full absolute -top-5 -right-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-white" viewBox="0 0 475.082 475.081">
+                                <path d="M164.454 36.547H54.818c-15.229 0-28.171 5.33-38.832 15.987C5.33 63.193 0 76.135 0 91.365v109.632c0 15.229 5.327 28.169 15.986 38.826 10.66 10.656 23.606 15.988 38.832 15.988h63.953c7.611 0 14.084 2.666 19.414 7.994 5.33 5.325 7.994 11.8 7.994 19.417v9.131c0 20.177-7.139 37.397-21.413 51.675-14.275 14.271-31.499 21.409-51.678 21.409h-18.27c-4.952 0-9.233 1.813-12.851 5.427-3.615 3.614-5.424 7.898-5.424 12.847v36.549c0 4.941 1.809 9.233 5.424 12.848 3.621 3.613 7.898 5.427 12.851 5.427h18.271c19.797 0 38.688-3.86 56.676-11.566 17.987-7.707 33.546-18.131 46.68-31.265 13.131-13.135 23.553-28.691 31.261-46.679 7.707-17.987 11.562-36.877 11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828s-23.602-15.986-38.827-15.986zm294.635 15.987c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229 0-28.171 5.33-38.828 15.987-10.656 10.66-15.984 23.601-15.984 38.831v109.632c0 15.229 5.328 28.169 15.984 38.826 10.657 10.656 23.6 15.988 38.828 15.988h63.953c7.611 0 14.089 2.666 19.418 7.994 5.324 5.328 7.994 11.8 7.994 19.417v9.131c0 20.177-7.139 37.397-21.416 51.675-14.274 14.271-31.494 21.409-51.675 21.409h-18.274c-4.948 0-9.233 1.813-12.847 5.427-3.617 3.614-5.428 7.898-5.428 12.847v36.549c0 4.941 1.811 9.233 5.428 12.848 3.613 3.613 7.898 5.427 12.847 5.427h18.274c19.794 0 38.684-3.86 56.674-11.566 17.984-7.707 33.541-18.131 46.676-31.265 13.134-13.135 23.562-28.695 31.265-46.679 7.706-17.983 11.563-36.877 11.563-56.671V91.361c-.003-15.23-5.328-28.171-15.992-38.827z" data-original="#000000"></path>
+                            </svg>
+                        </div>
+  
+                        <div class="flex items-center">
+                            <img src="https://readymadeui.com/team-1.webp" class="w-14 h-14 rounded-full shadow-xl border-2 border-white" />
+  
+                            <div class="ml-4">
+                                <h4 class="text-sm font-extrabold">John Doe</h4>
+                                <div class="flex space-x-1 mt-2">
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+  
+                        <div class="mt-6">
+                            <p class="text-sm leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus suscipit enim provident fuga odio officia. Esse eligendi nihil atque, laudantium totam alias ut ex quaerat error nobis officiis ratione iste?</p>
+                        </div>
+                    </div>
+  
+                    <div class="max-w-[350px] h-auto shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] lg:p-8 p-4 rounded-md bg-white relative  cursor-pointer hover:scale-[1.05] transition-all">
+                        <div class="bg-blue-600 flex items-center justify-center w-16 h-16 max-lg:w-14 max-lg:h-14 rounded-full absolute -top-5 -right-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-white" viewBox="0 0 475.082 475.081">
+                                <path d="M164.454 36.547H54.818c-15.229 0-28.171 5.33-38.832 15.987C5.33 63.193 0 76.135 0 91.365v109.632c0 15.229 5.327 28.169 15.986 38.826 10.66 10.656 23.606 15.988 38.832 15.988h63.953c7.611 0 14.084 2.666 19.414 7.994 5.33 5.325 7.994 11.8 7.994 19.417v9.131c0 20.177-7.139 37.397-21.413 51.675-14.275 14.271-31.499 21.409-51.678 21.409h-18.27c-4.952 0-9.233 1.813-12.851 5.427-3.615 3.614-5.424 7.898-5.424 12.847v36.549c0 4.941 1.809 9.233 5.424 12.848 3.621 3.613 7.898 5.427 12.851 5.427h18.271c19.797 0 38.688-3.86 56.676-11.566 17.987-7.707 33.546-18.131 46.68-31.265 13.131-13.135 23.553-28.691 31.261-46.679 7.707-17.987 11.562-36.877 11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828s-23.602-15.986-38.827-15.986zm294.635 15.987c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229 0-28.171 5.33-38.828 15.987-10.656 10.66-15.984 23.601-15.984 38.831v109.632c0 15.229 5.328 28.169 15.984 38.826 10.657 10.656 23.6 15.988 38.828 15.988h63.953c7.611 0 14.089 2.666 19.418 7.994 5.324 5.328 7.994 11.8 7.994 19.417v9.131c0 20.177-7.139 37.397-21.416 51.675-14.274 14.271-31.494 21.409-51.675 21.409h-18.274c-4.948 0-9.233 1.813-12.847 5.427-3.617 3.614-5.428 7.898-5.428 12.847v36.549c0 4.941 1.811 9.233 5.428 12.848 3.613 3.613 7.898 5.427 12.847 5.427h18.274c19.794 0 38.684-3.86 56.674-11.566 17.984-7.707 33.541-18.131 46.676-31.265 13.134-13.135 23.562-28.695 31.265-46.679 7.706-17.983 11.563-36.877 11.563-56.671V91.361c-.003-15.23-5.328-28.171-15.992-38.827z" data-original="#000000"></path>
+                            </svg>
+                        </div>
+  
+                        <div class="flex items-center">
+                            <img src="https://readymadeui.com/team-2.webp" class="w-14 h-14 rounded-full shadow-xl border-2 border-white" />
+  
+                            <div class="ml-4">
+                                <h4 class="text-sm font-extrabold">Mark Adair</h4>
+                                <div class="flex space-x-1 mt-2">
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+  
+                        <div class="mt-6">
+                            <p class="text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsam velit laudantium eius reiciendis provident officia qui perspiciatis, voluptates ducimus facere eum, aut voluptatem sequi nobis ut natus quibusdam ipsa!</p>
+                        </div>
+                    </div>
+  
+                    <div class="max-w-[350px] h-auto shadow-[0_2px_22px_-4px_rgba(93,96,127,0.2)] lg:p-8 p-4 rounded-md bg-white relative cursor-pointer hover:scale-[1.05] transition-all">
+                        <div class="bg-blue-600 flex items-center justify-center w-16 h-16 max-lg:w-14 max-lg:h-14 rounded-full absolute -top-5 -right-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-white" viewBox="0 0 475.082 475.081">
+                                <path d="M164.454 36.547H54.818c-15.229 0-28.171 5.33-38.832 15.987C5.33 63.193 0 76.135 0 91.365v109.632c0 15.229 5.327 28.169 15.986 38.826 10.66 10.656 23.606 15.988 38.832 15.988h63.953c7.611 0 14.084 2.666 19.414 7.994 5.33 5.325 7.994 11.8 7.994 19.417v9.131c0 20.177-7.139 37.397-21.413 51.675-14.275 14.271-31.499 21.409-51.678 21.409h-18.27c-4.952 0-9.233 1.813-12.851 5.427-3.615 3.614-5.424 7.898-5.424 12.847v36.549c0 4.941 1.809 9.233 5.424 12.848 3.621 3.613 7.898 5.427 12.851 5.427h18.271c19.797 0 38.688-3.86 56.676-11.566 17.987-7.707 33.546-18.131 46.68-31.265 13.131-13.135 23.553-28.691 31.261-46.679 7.707-17.987 11.562-36.877 11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828s-23.602-15.986-38.827-15.986zm294.635 15.987c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229 0-28.171 5.33-38.828 15.987-10.656 10.66-15.984 23.601-15.984 38.831v109.632c0 15.229 5.328 28.169 15.984 38.826 10.657 10.656 23.6 15.988 38.828 15.988h63.953c7.611 0 14.089 2.666 19.418 7.994 5.324 5.328 7.994 11.8 7.994 19.417v9.131c0 20.177-7.139 37.397-21.416 51.675-14.274 14.271-31.494 21.409-51.675 21.409h-18.274c-4.948 0-9.233 1.813-12.847 5.427-3.617 3.614-5.428 7.898-5.428 12.847v36.549c0 4.941 1.811 9.233 5.428 12.848 3.613 3.613 7.898 5.427 12.847 5.427h18.274c19.794 0 38.684-3.86 56.674-11.566 17.984-7.707 33.541-18.131 46.676-31.265 13.134-13.135 23.562-28.695 31.265-46.679 7.706-17.983 11.563-36.877 11.563-56.671V91.361c-.003-15.23-5.328-28.171-15.992-38.827z" data-original="#000000"></path>
+                            </svg>
+                        </div>
+  
+                        <div class="flex items-center">
+                            <img src="https://readymadeui.com/team-3.webp" class="w-14 h-14 rounded-full shadow-xl border-2 border-white" />
+  
+                            <div class="ml-4">
+                                <h4 class="text-sm font-extrabold">Simon Konecki</h4>
+                                <div class="flex space-x-1 mt-2">
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#ff0000]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                    <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+  
+                        <div class="mt-6">
+                            <p class="text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ullam maxime possimus quo laudantium esse dolorum doloremque repudiandae natus nemo blanditiis sapiente quam vero consectetur aspernatur ipsum repellendus, odit voluptatem!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <!-- testimonial---end -->
+
+           <!-- newsletter-----start -->
+           <div class="bg-gradient-to-r from-gray-200 via-gray-50 to-gray-200 py-16 font-[sans-serif]">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 p-4 px-10">
+              <div class="w-full text-center lg:text-left">
+                <h2 class="text-gray-800 text-5xl font-extrabold mb-6">Stay Updated</h2>
+                <p class="text-lg text-gray-600">Subscribe to our newsletter for the latest updates, tips, and exclusive offers.</p>
+              </div>
+      
+              <div class="w-full max-lg:max-w-lg">
+                <form class="flex items-center">
+                  <input type="email" placeholder="Enter your email" class="w-full lg:w-[300px] text-gray-800 bg-white py-3.5 px-4 text-base border border-[#ddd] border-r-0 rounded-l-lg outline-none focus:border-blue-600" required />
+                  <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold tracking-wide py-3.5 px-6 border border-blue-600 rounded-r-lg outline-none">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+            <!-- newsletter---end -->
+
+           <!-- footer---start -->
+           <footer class="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 font-sans tracking-wide px-10">
+            <div class="py-12 px-12">
+              <div class="flex flex-wrap items-center sm:justify-between max-sm:flex-col gap-6">
+                <div>
+                  <h1 class="text-[#007bff] text-3xl font-bold w-38
+                  "><a href="#">AYO MOSES</a></h1>
+                </div>
+      
+                <ul class="flex items-center justify-center flex-wrap gap-y-2 md:justify-end space-x-6">
+                  <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Home</a></li>
+                  <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Work With Me</a></li>
+                  <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Portfolio</a></li>
+                  <!-- <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Product</a></li> -->
+                  <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">About</a></li>
+                  <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Contact</a></li>
+                </ul>
+              </div>
+      
+              <hr class="my-6 border-gray-500" />
+      
+              <p class='text-center text-gray-300 text-base'>© Ayo Moses. All rights reserved.</p>
+            </div>
+          </footer>
+            <!-- footer-end -->
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header---start -->
+   <header class='flex shadow-md py-4 px-4 sm:px-10 bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
+    <div class='flex flex-wrap items-center justify-between gap-4 w-full'>
+      <h1 class="text-[#007bff] text-2xl font-bold w-38
+      "><a href="#">AYO MOSES</a></h1>
+  
+      <div id="collapseMenu"
+        class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+        <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-blue-500 p-3'>
+        </button>
+  
+        <ul
+          class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+          <li class='mb-6 hidden max-lg:block'>
+            <h1 class="text-[#007bff] text-2xl font-bold w-38
+            "><a href="#">AYO MOSES</a></h1>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'>
+            <a href='index.html' class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Home</a>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='work.html'
+              class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Work With Me</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='portfolio.html'
+              class='hover:text-[#007bff]  text-gray-600 font-bold block text-base'>Portfolio</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='Products.html'
+              class='hover:text-[#007bff]  text-[#007bff] font-bold block text-base'>Products</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='about.html'
+              class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>About</a>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='contact.html'
+              class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Contact</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class='flex items-center max-lg:ml-auto space-x-5'>
+        <img src="/build/img/svg/loginicon.svg" alt="login" class="cursor-pointer hover:fill-[#007bff] inline">
+
+        <img src="/build/img/svg/cart.svg" alt="cart" class="cursor-pointer hover:fill-[#007bff] inline">
+        <button id="toggleOpen" class='lg:hidden !ml-7'>
+          <img src="/build/img/svg/toggleOpen.svg" alt="toggleopen" class="w-7 h-7" fill="#000">
+        </button>
+      </div>
+    </div>
+</header>
+   <!-- header-end -->
+
+   <!-- hero---start -->
+   <div class="relative bg-gradient-to-r from-purple-900 to-indigo-800 py-16 font-[sans-serif]">
+    <div class="absolute inset-0">
+      <img src="https://readymadeui.com/cardImg.webp" alt="Background Image" class="w-full h-full object-cover opacity-50" />
+    </div>
+
+    <div class="relative max-w-screen-xl mx-auto px-8 z-10 text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">Enhance Your Learning Journey</h1>
+      <p class="text-lg md:text-xl mb-12">Access a range of goodies to help you craft engaging learning experiences.</p>
+      <button type="button" class="bg-indigo-600 hover:bg-indigo-700 text-white text-base tracking-wide px-6 py-3 rounded-full transition duration-300 ease-in-out shadow-lg hover:shadow-xl">Shop Now</button>
+    </div>
+  </div>
+    <!-- hero---end -->
+
+    <!-- products---start -->
+    <div class="font-sans py-4 mx-auto lg:max-w-6xl md:max-w-4xl max-sm:max-w-md">
+        <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-12">Top Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6 gap-12">
+  
+          <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+            <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
+              <img src="https://readymadeui.com/images/sunglass7.webp" alt="product1"
+                class="h-full w-full object-contain" />
+            </div>
+  
+            <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+              <div class="text-center">
+                <h3 class="text-base font-bold text-gray-800">White Sun Glass</h3>
+                <h4 class="text-lg text-blue-600 font-bold mt-2">$35.00</h4>
+              </div>
+  
+              <div class="flex justify-center space-x-1 mt-4">
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+            <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
+              <img src="https://readymadeui.com/images/product14.webp" alt="product2"
+                class="h-full w-full object-contain" />
+            </div>
+  
+            <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+              <div class="text-center">
+                <h3 class="text-base font-bold text-gray-800">Echo Elegance</h3>
+                <h4 class="text-lg text-blue-600 font-bold mt-2">$20.00</h4>
+              </div>
+  
+              <div class="flex justify-center space-x-1 mt-4">
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+            <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
+              <img src="https://readymadeui.com/images/laptop4.webp" alt="product3"
+                class="h-full w-full object-contain" />
+            </div>
+  
+            <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+              <div class="text-center">
+                <h3 class="text-base font-bold text-gray-800">Acer One 14 AMD</h3>
+                <h4 class="text-lg text-blue-600 font-bold mt-2">$400.00</h4>
+              </div>
+  
+              <div class="flex justify-center space-x-1 mt-4">
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+            <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
+              <img src="https://readymadeui.com/images/coffee2.webp" alt="product4"
+                class="h-full w-full object-contain" />
+            </div>
+  
+            <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+              <div class="text-center">
+                <h3 class="text-base font-bold text-gray-800">Irish Cream Dream</h3>
+                <h4 class="text-lg text-blue-600 font-bold mt-2">$11.00</h4>
+              </div>
+  
+              <div class="flex justify-center space-x-1 mt-4">
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+            <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
+              <img src="https://readymadeui.com/images/coffee7.webp" alt="product5"
+                class="h-full w-full object-contain" />
+            </div>
+  
+            <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+              <div class="text-center">
+                <h3 class="text-base font-bold text-gray-800">Mocha Madness</h3>
+                <h4 class="text-lg text-blue-600 font-bold mt-2">$10.00</h4>
+              </div>
+  
+              <div class="flex justify-center space-x-1 mt-4">
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+            <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
+              <img src="https://readymadeui.com/images/sunglass6.webp" alt="product6"
+                class="h-full w-full object-contain" />
+            </div>
+  
+            <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+              <div class="text-center">
+                <h3 class="text-base font-bold text-gray-800">Black Sun Glass</h3>
+                <h4 class="text-lg text-blue-600 font-bold mt-2">$70.00</h4>
+              </div>
+  
+              <div class="flex justify-center space-x-1 mt-4">
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+            <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
+              <img src="https://readymadeui.com/images/product12.webp" alt="product7"
+                class="h-full w-full object-contain" />
+            </div>
+  
+            <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+              <div class="text-center">
+                <h3 class="text-base font-bold text-gray-800">Urban Sneakers</h3>
+                <h4 class="text-lg text-blue-600 font-bold mt-2">$20.00</h4>
+              </div>
+  
+              <div class="flex justify-center space-x-1 mt-4">
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bg-gray-100 p-3 rounded-lg group overflow-hidden cursor-pointer relative z-50 hover:before:bg-black before:absolute before:inset-0 before:opacity-20 before:transition-all">
+            <div class="w-full h-[300px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
+              <img src="https://readymadeui.com/images/laptop2.webp" alt="product8"
+                class="h-full w-full object-contain" />
+            </div>
+  
+            <div class="absolute mx-auto left-0 right-0 -bottom-80 group-hover:bottom-2 bg-white w-11/12 p-3 rounded-lg transition-all duration-300">
+              <div class="text-center">
+                <h3 class="text-base font-bold text-gray-800">ASUS Vivobook 15</h3>
+                <h4 class="text-lg text-blue-600 font-bold mt-2">$450.00</h4>
+              </div>
+  
+              <div class="flex justify-center space-x-1 mt-4">
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#facc15]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+                <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+     <!-- products-end -->
+
+    <!-- newsletter-----start -->
+    <div class="bg-gradient-to-r from-gray-200 via-gray-50 to-gray-200 py-16 font-[sans-serif]">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 p-4">
+          <div class="w-full text-center lg:text-left">
+            <h2 class="text-gray-800 text-5xl font-extrabold mb-6">Stay Updated</h2>
+            <p class="text-lg text-gray-600">Subscribe to our newsletter for the latest updates, tips, and exclusive offers.</p>
+          </div>
+  
+          <div class="w-full max-lg:max-w-lg">
+            <form class="flex items-center">
+              <input type="email" placeholder="Enter your email" class="w-full lg:w-[300px] text-gray-800 bg-white py-3.5 px-4 text-base border border-[#ddd] border-r-0 rounded-l-lg outline-none focus:border-blue-600" required />
+              <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold tracking-wide py-3.5 px-6 border border-blue-600 rounded-r-lg outline-none">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+     <!-- newsletter---end -->
+
+    <!-- footer----start -->
+    <footer class="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 font-sans tracking-wide">
+        <div class="py-12 px-12">
+          <div class="flex flex-wrap items-center sm:justify-between max-sm:flex-col gap-6">
+            <div>
+              <h1 class="text-[#007bff] text-3xl font-bold w-38
+              "><a href="#">AYO MOSES</a></h1>
+            </div>
+  
+            <ul class="flex items-center justify-center flex-wrap gap-y-2 md:justify-end space-x-6">
+              <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Home</a></li>
+              <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Work With Me</a></li>
+              <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Portfolio</a></li>
+              <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Product</a></li>
+              <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">About</a></li>
+              <li><a href="javascript:void(0)" class="text-gray-300 hover:underline text-base">Contact</a></li>
+            </ul>
+          </div>
+  
+          <hr class="my-6 border-gray-500" />
+  
+          <p class='text-center text-gray-300 text-base'>© Ayo Moses. All rights reserved.</p>
+        </div>
+      </footer>
+     <!-- footer---end -->
+</body>
+</html>
